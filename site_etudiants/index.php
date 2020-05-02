@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 	<head>
 		<title>Inscription des étudiants</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 	</head> 
-<body> 
+	<header>
+	    <div id="banniere">
+	    <p><img src="./ucp.png" alt="ucp"/></p>
+	    </div>
+ 	</header>
+ 	
+
+	<body> 
+	<div id="menu">
+		<ul>
+			<li><a href="index.php">Inscription</a></li>
+			<li><a href="connexion.php">Connexion</a></li>
+			<li><a href="genereCles.php">Demande de cle API</a></li>
+			<li><a href="#">Documentation API</a></li>
+		</ul>
+	</div>
 	<table align="center">
 		<tr>		
 			<td width="80%">
@@ -15,7 +29,7 @@
 					<legend><h2>Inscription des étudiants</h2> </legend> 
 					<div>
 					
-					<form method="post" action="inscription.php">
+					<form method="get" action="inscription.php">
 						<p>Nom:  <br/> <input required  minlength="3" type="text" name="nom"/> </p>
 						<p>Prénom:  <br/> <input required  minlength="3" type="text" name="prenom"/> </p>
 						<p>Email:  <br/> <input required  type="email" name="email"/> </p>
@@ -36,6 +50,9 @@
     						<option name ='groupe' value='LPI-2'>LPI-2</option>
     						<option name ='groupe' value='LPI-3'>LPI-3</option>
    						</select>
+   						<br/>
+   						
+   						
 						
 						<div class = "erreur-connexion">
 							<?php
@@ -46,19 +63,21 @@
 							
 							?>
 								
-						</div>	
-						   
+						</div>
+					<p> Choisir votre photo de profil :</p>
+					<p><input type="file" id="img" name="avatar" accept="image/*" /></p>
+					<input type="hidden" name="formtype" value="inscription" />	
+					<input type="submit" name="valider" value="Valider"/>	   
 					</form>
-					<form method="post" action="connexion.php">
-					<input type="submit" name="valider" value="Valider"/>
-					</form>
-					<br/>
-					<a href="login.php"><span class="pw-oublie">Vous possedez un compte&nbsp;?</span></a>
+					
+					<a href="connexion.php"><span class="pw-oublie">Vous possedez un compte&nbsp;?</span></a>
 					</div>
 				</fieldset>
 			</td>
 		</tr>
 		</tbody>
 	</table>
+
+
 </body>
 </html>

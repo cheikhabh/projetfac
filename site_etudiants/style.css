@@ -1,0 +1,69 @@
+h1,h2
+{
+	text-align:center;
+}
+img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+body
+{
+	background-color: #87CEEB
+}
+#menu 
+{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color:#87CEEB;
+}
+
+#menu ul 
+{
+    float: left;
+    left: 50%;
+    position: relative;
+    padding-top: 15px;
+    margin-left: -60px;
+}
+
+#menu ul li 
+{
+    margin-left: 20px;
+    float: left;
+    list-style-type: none;
+    position: relative;
+    left: -50%;
+}
+
+#menu ul li a 
+{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+#menu ul li a:hover 
+{
+    color: white;
+    background-color: black;
+}
+
+#arriere
+{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+#arriere li
+{
+    margin-right: 40px;
+}

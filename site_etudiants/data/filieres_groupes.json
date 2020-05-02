@@ -1,0 +1,46 @@
+{
+    "listeFilieres":[
+
+        {
+            "nomFiliere":"LPI-WS",
+            "groupes":[
+                "LPI-1",
+                "LPI-2",
+                "LPI-3"
+            ]
+        },
+
+        {
+            "nomFiliere":"L1-MIPI",
+            "groupes":[
+                "A1",
+                "B2"
+                
+            ]
+        },
+        {
+            "nomFiliere":"L2-MI",
+            "groupes":[
+                "A1",
+                "B2"
+            ]
+        },
+        {
+            "nomFiliere":"L3-I",
+            "groupes":[
+                "A1",
+                "B2"
+            ]
+        },
+        {
+            "nomFiliere":"LP-RS",
+            "groupes":[
+                "LPI-1",
+                "LPI-2",
+                "LPI-3"
+            ]
+        }
+
+    ]
+    
+}

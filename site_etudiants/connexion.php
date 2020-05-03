@@ -6,7 +6,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link href="style.css" rel="stylesheet">
 	</head> 
-<body> 
+	<header>
+	    <div id="banniere">
+	    <p><img src="./ucp.png" alt="ucp"/></p>
+	    </div>
+ 	</header>
+ 	
+<body>
+	<h1>Espace Etudiant</h1>
+	<nav>
+		<div id="menu">
+		<ul>
+			<li><a href="index.php">Inscription</a></li>
+			<li><a href="connexion.php">Connexion</a></li>
+			<li><a href="genereCles.php">Demande de cle API</a></li>
+			<li><a href="#">Doc API</a></li>
+		</ul>
+		</div>
+	</nav>
+	
+
 <table>
 		<tr>		
 			<td width="80%">

@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Genération de votre clé API</title>
-</head>
+</head> 
+<header>
+    <div id="banniere">
+    <p><img src="./ucp.png" alt="ucp"/></p>
+    </div>
+</header>
 <body>
     <h1> Demande de clé API </h1>
-    <form action="genereCles.php" method="get">
-        Entrer votre mail:<input type="mail" name="Mail_Api">
-        <input type="submit" name="sub" value="valider">
-    </form>
-
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="index.php">Inscription</a></li>
+                <li><a href="connexion.php">Connexion</a></li>
+                <li><a href="genereCles.php">Demande de cle API</a></li>
+                <li><a href="#">Doc API</a></li>
+            </ul>
+        </div>
+    </nav>
+    <table align="center">
+        <tr>
+        <td width="80%">
+        <fieldset>
+            <legend><h2>Entrer votre mail</h2> </legend> 
+            <div>
+            <form action="genereCles.php" method="get">
+                Email:<input type="mail" name="Mail_Api">
+                <input type="submit" name="sub" value="Valider">
+            </form>
+            </div>
+        </fieldset>
+    </td>
+</tr>
+</table>
 
 <?php
 function randomCle($longueur){

@@ -14,14 +14,16 @@
  	
 
 	<body> 
-	<div id="menu">
-		<ul>
-			<li><a href="index.php">Inscription</a></li>
-			<li><a href="connexion.php">Connexion</a></li>
-			<li><a href="genereCles.php">Demande de cle API</a></li>
-			<li><a href="#">Documentation API</a></li>
-		</ul>
-	</div>
+	<nav>
+		<div id="menu">
+			<ul>
+				<li><a href="index.php">Inscription</a></li>
+				<li><a href="connexion.php">Connexion</a></li>
+				<li><a href="genereCles.php">Demande de cle API</a></li>
+				<li><a href="#">Doc API</a></li>
+			</ul>
+		</div>
+	</nav>
 	<table align="center">
 		<tr>		
 			<td width="80%">
@@ -70,7 +72,7 @@
 					<input type="submit" name="valider" value="Valider"/>	   
 					</form>
 					
-					<a href="connexion.php"><span class="pw-oublie">Vous possedez un compte&nbsp;?</span></a>
+					
 					</div>
 				</fieldset>
 			</td>

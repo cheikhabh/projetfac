@@ -8,62 +8,58 @@ img
     margin-left: auto;
     margin-right: auto 
 }
-body
+ul 
 {
-	background-color: #87CEEB
-}
-#menu 
-{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    background-color:#87CEEB;
+ 	padding:0;
+ 	margin:0;
+ 	list-style-type:none;
 }
 
-#menu ul 
+li 
 {
-    float: left;
-    left: 50%;
-    position: relative;
-    padding-top: 15px;
-    margin-left: -60px;
+ 	margin-left:2px;
+ 	float:left;
 }
-
-#menu ul li 
+ul li a 
 {
-    margin-left: 20px;
-    float: left;
+ 	display:block;
+ 	float:left;   
+ 	width:100px;
+ 	background-color:#6495ED;
+ 	color:black;
+ 	text-decoration:none;
+ 	text-align:center;
+	padding:5px;
+	border:2px solid;
+	/*pour avoir un effet "outset" avec IE :*/
+	border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+ul li a:hover 
+{
+	background-color:#D3D3D3;
+	border-color:#696969 #DCDCDC #DCDCDC #696969;
+} 
+
+nav ul{
     list-style-type: none;
-    position: relative;
-    left: -50%;
+    display: flex;
+    margin: auto; 
+    padding-left: 280px;
+
 }
 
-#menu ul li a 
-{
-    text-align: center;
-    padding-top: 10px;
-    display: inline-block;
-    background-color: white;
-    height: 30px;
-    width: 100px;
-    color: black;
+nav li{
+    margin-right: 80px;
+}
+
+nav a{
+    font-size: 1.4em;
+    color: #181818;
+    padding-bottom: 10px;
     text-decoration: none;
 }
 
-#menu ul li a:hover 
-{
-    color: white;
-    background-color: black;
-}
-
-#arriere
-{
-    list-style-type: none;
-    display: flex;
-    margin: auto;
-}
-
-#arriere li
-{
-    margin-right: 40px;
+nav a:hover{
+    color: lightgrey;
+    border-bottom: 2px solid white;
 }

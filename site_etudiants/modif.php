@@ -31,7 +31,7 @@
 					<div>
 					<form method="get" action="modif_infos.php">
 						<p>Nom:  <br/> <input required  minlength="3" type="text" name="nom"/> </p>
-						<p>Prenom:  <br/> <input required  minlength="3" type="text" name="prenom" value="<?php if (isset($_SESSION['email'])){ echo$_SESSION['email'];} ?>" /> </p>
+						<p>Prenom:  <br/> <input required  minlength="3" type="text" name="prenom" value="<?php if (isset($_SESSION['email'])){ echo $_SESSION['email'];} ?>" /> </p>
 						<p>Email:  <br/> <input required  type="email" name="email"/> </p>
 						<p>Mot de passe: <br/> <input required  minlength="8" type="password" name="password"/> </p>
 						<p>Filiere: <br/> </p>

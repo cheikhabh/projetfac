@@ -19,13 +19,14 @@
 				<li><a href="index.php">Inscription</a></li>
 				<li><a href="connexion.php">Connexion</a></li>
 				<li><a href="genereCles.php">Demande de cle API</a></li>
-				<li><a href="#">DocAPI</a></li>
+				<li><a href="doc_api.html">DocAPI</a></li>
 			</ul>
 		</div>
 	</nav>
 <?php 
 	
 	function inscrip(){
+	if (isset($_GET['email'])) {
 	$etu=file('etudiants.csv');
 	$found= FALSE;
 	for ($i=0; $i < sizeof($etu) ; $i++) { 
@@ -48,7 +49,7 @@
 	   	echo "Vous vous êtes bien inscrits. \n";	    
 	        
 	}
-	
+	}
 }
 inscrip();
 

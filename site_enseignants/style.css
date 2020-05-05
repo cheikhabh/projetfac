@@ -8,22 +8,22 @@ img
     margin-left: auto;
     margin-right: auto 
 }
-ul 
+nav ul 
 {
  	padding:0;
  	margin:0;
  	list-style-type:none;
 }
 
-li 
+nav li 
 {
  	margin-left:2px;
- 	float:left;
+ 	float:center;
 }
-ul li a 
+nav ul li a 
 {
  	display:block;
- 	float:left;   
+ 	float:center;   
  	width:100px;
  	background-color:#6495ED;
  	color:black;
@@ -34,7 +34,7 @@ ul li a
 	/*pour avoir un effet "outset" avec IE :*/
 	border-color:#DCDCDC #696969 #696969 #DCDCDC;
 }
-ul li a:hover 
+nav ul li a:hover 
 {
 	background-color:#D3D3D3;
 	border-color:#696969 #DCDCDC #DCDCDC #696969;

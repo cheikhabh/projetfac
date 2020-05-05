@@ -19,7 +19,7 @@
                 <li><a href="index.php">Inscription</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
                 <li><a href="genereCles.php">Demande de cle API</a></li>
-                <li><a href="#">Doc API</a></li>
+                <li><a href="doc_api.html">Doc API</a></li>
             </ul>
         </div>
     </nav>
@@ -72,7 +72,7 @@ if(isset($_GET['Mail_Api'])){
     }
     else{
         $write_ligne="$mail;$apiCle;\n";
-        $fichier=fopen('api.csv' , 'a');
+        $fichier=fopen('api.csv', 'a');
         fwrite($fichier, $write_ligne);
 
         echo"<p> Votre clé est la suivante: ".$apiCle."</p>";

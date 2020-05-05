@@ -20,6 +20,8 @@
       <ul>
         <li><a href="index.php">Inscription</a></li>
         <li><a href="connexion.php">Connexion</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">A propos</a></li>
       </ul>
     </div>
 </nav>
@@ -53,6 +55,6 @@
 
 ?>
 </table>
-<p><a href="#"></p>
+<p>Retrouvez en mosaique les étudiants par filiere et par groupe <a href="filiere.php">en cliquant ici</p>
 </body>
 </html>

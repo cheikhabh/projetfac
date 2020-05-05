@@ -20,7 +20,7 @@
 				<li><a href="index.php">Inscription</a></li>
 				<li><a href="connexion.php">Connexion</a></li>
 				<li><a href="genereCles.php">Demande de cle API</a></li>
-				<li><a href="#">Doc API</a></li>
+				<li><a href="doc_api.html">Doc API</a></li>
 			</ul>
 		</div>
 	</nav>

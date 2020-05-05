@@ -1,5 +1,5 @@
 <?php
-header('content-type:application/json');
+header('Content-Type: application/json');
 
 function api($filiere,$groupe){
    
@@ -10,7 +10,7 @@ function api($filiere,$groupe){
     for($i=0;$i <sizeof($RecupFich);$i++){
         $ligne=explode(";", $RecupFich[$i]);
         $tab=array();
-        if($filliere=$ligne[4] && $groupe == $ligne[5]){
+        if($filiere == $ligne[4] && $groupe == $ligne[5]){
             $tab[$i]['nom']=$ligne[0];
             $tab[$i]['prenom']=$ligne[1];
             $tab[$i]['email']=$ligne[2];

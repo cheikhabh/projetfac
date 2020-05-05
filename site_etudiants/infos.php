@@ -21,20 +21,31 @@ session_start();
 				<li><a href="index.php">Inscription</a></li>
 				<li><a href="connexion.php">Connexion</a></li>
 				<li><a href="genereCles.php">Demande de cle API</a></li>
-				<li><a href="#">Doc API</a></li>
+				<li><a href="doc_api.html">Doc API</a></li>
 			</ul>
 		</div>
 	</nav>
 <?php
-	
-	echo "<p>Nom : ".$_SESSION['nom']."</p>";
-	echo "<p>Prenom : ".$_SESSION['prenom']."</p>";
-	echo "<p> E-mail : ".$_SESSION['email']."</p>";
-	echo "<p>Filiere : ".$_SESSION['filiere']."</p>";
-	echo "<p> Groupe : ".$_SESSION['groupe']."</p>";
+
+	$informations=file("etudiants.csv");
+	$tab=array();
+	for ($i=0; $i < sizeof($informations) ; $i++) { 
+	    $csv=explode(";", $informations[$i]);
+	    if ($_SESSION['email']== $csv[2]){
+	        $info=$csv;
+	    }
+	}
+?>
+
+<?php	
+	echo "<p>Nom : $info[0]</p>";
+	echo "<p>Prenom : $info[1]</p>";
+	echo "<p> E-mail : $info[2]</p>";
+	echo "<p>Filiere : $info[4]</p>";
+	echo "<p> Groupe : $info[5]</p>";
 	echo "<img src=".$_SESSION['photo'].">";
 ?>
 
-<p>Si vous voulez modifier vos informations, <a href="modif_infos.html">cliquez-ici </a></p>
+<p>Si vous voulez modifier vos informations, <a href="modif.php">cliquez-ici </a></p>
 </body>
 </html>

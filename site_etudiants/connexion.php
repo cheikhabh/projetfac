@@ -20,13 +20,13 @@
 			<li><a href="index.php">Inscription</a></li>
 			<li><a href="connexion.php">Connexion</a></li>
 			<li><a href="genereCles.php">Demande de cle API</a></li>
-			<li><a href="#">Doc API</a></li>
+			<li><a href="doc_api.html">Doc API</a></li>
 		</ul>
 		</div>
 	</nav>
 	
 
-<table>
+<table align="center">
 		<tr>		
 			<td width="80%">
 				<fieldset class ="login">
@@ -42,7 +42,7 @@
 						
 						?>
 					</div>
-					<p>Email:  <br/> <input required type="mail" name="mail"/> </p>
+					<p>Email:  <br/> <input required type="email" name="email"/> </p>
 					<p>Mot de passe: <br/> <input required  minlength="8" type="password" name="password"/> </p>
 					<input type="hidden" name="formtype" value="connexion" />	
 					<input type="submit" name="valider" value="Se connecter"/>
@@ -54,7 +54,6 @@
 		</tr>
 </table>
 
-<p><a href="index.php">Inscription</a></p>
 
 </body>
 </html>

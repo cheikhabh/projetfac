@@ -20,6 +20,8 @@
 			<ul>
 				<li><a href="index.php">Inscription</a></li>
 				<li><a href="connexion.php">Connexion</a></li>
+				<li><a href="#">Contact</li>
+				<li><a href="#">A propos</a></li>
 			</ul>
 		</div>
 	</nav>

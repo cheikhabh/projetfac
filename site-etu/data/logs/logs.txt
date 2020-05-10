@@ -1,0 +1,8 @@
+[06/05/20] [13:11:05] ::1 connecte to /projetfac/site-etu/index.php
+[06/05/20] [13:11:46] ::1 connecte to /projetfac/site-etu/inscription.php
+[06/05/20] [13:12:01] ::1 connecte to /projetfac/site-etu/connexion.php
+[06/05/20] [13:12:09] ::1 connecte to /projetfac/site-etu/verification.php
+[06/05/20] [13:12:09] ::1 connecte to /projetfac/site-etu/infos.php
+[06/05/20] [13:12:12] ::1 connecte to /projetfac/site-etu/genereCles.php
+[06/05/20] [13:12:20] ::1 connecte to /projetfac/site-etu/genereCles.php
+[06/05/20] [14:14:07] ::1 connecte to /projetfac/site-etu/index.php

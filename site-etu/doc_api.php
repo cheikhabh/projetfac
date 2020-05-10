@@ -1,0 +1,53 @@
+<?php
+
+function logs(){
+  $date = "[".date('d')."/".date('m')."/".date('y')."] ";
+  $hour = "[".date('H').":".date('i').":".date('s')."] ";
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $url = $_SERVER['PHP_SELF'];
+  $answer = $date.$hour.$ip." connecte to ".$url."\n";
+
+  $files = fopen('./data/logs/logs.txt', 'a+');
+  fputs($files,$answer);
+  fclose($files);
+}
+logs();
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation API</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+    <div id="banniere">
+    <p><img src="./images/ucp.png" alt="ucp"/></p>
+    </div>
+</header>
+<body>
+	<h1>Informations concernant l'API</h1>
+	<nav>
+		<div id="menu">
+		<ul>
+			<li><a href="index.php">Inscription</a></li>
+			<li><a href="connexion.php">Connexion</a></li>
+			<li><a href="genereCles.php">Cle API</a></li>
+			<li><a href="doc_api.php">Doc API</a></li>
+		</ul>
+		</div>
+	</nav>
+	<br/>
+	<h2>Qu'es qu'une API ?</h2>
+	<p>API est un acronyme pour Applications Programming Interface. Une API est une interface de programmation qui permet de se « brancher » sur une application pour échanger des données</p>
+	<p>Dans notre cas, nous avons créer et utiliser une API dans le cadre d'un trombinoscope. Le but du trombinoscope est de créer 2 sites : un site où les etudiants du departement informatique s'inscrivent et sont enregistreés dans ce site et un second site où les enseignants s'inscrivent et ont accès aux informations des étudiants par filière et par groupe</p>
+	<p>Pour cela, nous avons mis en place une API où l'on retrouve toutes les fillières et tous les groupe. Pour y avoir accès, vous avez juste à reprendre l'URL ci desssous : </p>
+	<p><b> http://projet-cheikh-site1.alwaysdata.net/API_groupe.php </b></p>
+	<p> Pour retrouver les étudiants par filiere et par groupe, vous devez reprendre l'URL ci-dessous : </p>
+	<p><b> http://projet-cheikh-site1.alwaysdata.net/API.php?filiere={nomFiliere}&groupe={nomGroupe}&key={cleAPI} </b></p>
+
+</body>
+</html>
